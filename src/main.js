@@ -7,6 +7,7 @@ Vue.use(VueRouter);
 
 //import routes
 import HomePage from "./components/HomePage";
+import ProfilePage from "./components/ProfilePage";
 import Register from "./components/Register";
 import Login from "./components/Login";
 
@@ -15,6 +16,7 @@ const routes = [
     { path: "/", component: HomePage },
     { path: "/register", component: Register },
     { path: "/login", component: Login },
+    { path: "/:username", component: ProfilePage },
 ];
 
 //router config
